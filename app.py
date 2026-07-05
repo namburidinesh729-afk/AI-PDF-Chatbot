@@ -491,7 +491,7 @@
 import streamlit as st
 from pdf.pdf_processor import process_uploaded_pdf
 from database.vector_store import load_vector_store
-from core.chatbot import ask_gemini
+from core.chatbot import ask_groq
 from core.summary import generate_summary
 from core.quiz import generate_quiz
 from core.notes import generate_notes
@@ -696,7 +696,7 @@ if st.session_state.db is not None:
         )
         with st.spinner("🤖 Gemini is thinking..."):
             try:
-                answer = ask_gemini(
+                answer = ask_groq(
                     context,
                     question
                 )
