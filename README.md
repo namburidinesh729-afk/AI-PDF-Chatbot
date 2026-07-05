@@ -1,5 +1,5 @@
 # 📚 AI Study Assistant
-An AI-powered **PDF Study Assistant** built using **Python, Streamlit, LangChain, FAISS, Hugging Face Embeddings, and Google Gemini 2.5 Flash**.
+An AI-powered **PDF Study Assistant** built using **Python, Streamlit, LangChain, FAISS, Hugging Face Embeddings, and Groq (Llama 3.3 70B Versatile)**.
 Upload any PDF and instantly interact with it using AI.
 ---
 # 🚀 Live Demo
@@ -38,7 +38,7 @@ Upload any PDF and instantly interact with it using AI.
 | LangChain | RAG Pipeline |
 | FAISS | Vector Database |
 | Hugging Face Embeddings | Text Embeddings |
-| Google Gemini 2.5 Flash | Large Language Model |
+| Groq | Large Language Model |
 | PyPDF2 | PDF Processing |
 ---
 # 🏗 Project Architecture
@@ -64,7 +64,7 @@ Upload any PDF and instantly interact with it using AI.
          MMR Retrieval Search
                   │
                   ▼
-       Gemini 2.5 Flash LLM
+       groq 2.5 Flash LLM
                   │
                   ▼
       AI Answer + Source Pages
