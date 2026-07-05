@@ -9,7 +9,7 @@ Upload any PDF and instantly:
 - 🎯 Generate Interview Questions
 ---
 # 🚀 Live Demo
-👉 YOUR_STREAMLIT_URL
+👉 https://ai-study-assistant-dinesh.streamlit.app
 ---
 # 📸 Screenshots
 (Add screenshots here)
@@ -50,7 +50,7 @@ AI-PDF-Chatbot/
 ---
 # ⚙ Installation
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/namburidinesh729-afk/AI-PDF-Chatbot
 cd AI-PDF-Chatbot
 pip install -r requirements.txt
 streamlit run app.py
