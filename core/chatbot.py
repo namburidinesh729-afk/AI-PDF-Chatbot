@@ -62,8 +62,10 @@ from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 load_dotenv()
+import streamlit as st
+st.write("API Key starts with:", os.getenv("GOOGLE_API_KEY")[:8])
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash",
     temperature=0,
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
@@ -86,3 +88,4 @@ def ask_gemini(context, question):
         }
     )
     return response.content
+
