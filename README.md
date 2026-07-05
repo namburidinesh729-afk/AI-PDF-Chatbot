@@ -1,29 +1,41 @@
 # 📚 AI Study Assistant
-An AI-powered Study Assistant built using **Python, Streamlit, LangChain, FAISS, Hugging Face Embeddings, and Google Gemini**.
-This application allows users to upload PDF documents and interact with them using AI.
+An AI-powered PDF Study Assistant built using **Python, Streamlit, LangChain, FAISS, Hugging Face Embeddings, and Google Gemini 2.5 Flash**.
+Upload any PDF and instantly:
+- 💬 Chat with your PDF
+- 📄 Generate Summaries
+- ❓ Generate MCQ Quizzes
+- 📝 Generate Revision Notes
+- 🧠 Generate Flashcards
+- 🎯 Generate Interview Questions
 ---
-## 🚀 Features
-- 📂 Upload PDF
-- 💬 Chat with PDF
-- 📄 AI Summary Generator
-- ❓ Quiz Generator
-- 📝 Smart Notes Generator
-- 🧠 Flashcard Generator
-- 🎯 Interview Question Generator
-- 📄 Source References
-- ⬇ Download Generated Results
+# 🚀 Live Demo
+👉 YOUR_STREAMLIT_URL
 ---
-## 🛠 Technologies Used
-- Python
-- Streamlit
-- LangChain
-- FAISS
-- Hugging Face Embeddings
-- Google Gemini API
-- PyPDF
-- Sentence Transformers
+# 📸 Screenshots
+(Add screenshots here)
 ---
-## 📂 Project Structure
+# ✨ Features
+- PDF Upload
+- AI Chat
+- Semantic Search
+- Source References
+- Summary Generation
+- Quiz Generation
+- Notes Generation
+- Flashcards
+- Interview Questions
+- Download Results
+---
+# 🛠 Tech Stack
+Python
+Streamlit
+LangChain
+FAISS
+Hugging Face Embeddings
+Google Gemini 2.5 Flash
+PyPDF2
+---
+# 📂 Project Structure
 ```
 AI-PDF-Chatbot/
 │
@@ -32,49 +44,17 @@ AI-PDF-Chatbot/
 ├── database/
 ├── pdf/
 ├── ui/
-├── pdfs/
-├── faiss_index/
 ├── requirements.txt
 └── README.md
 ```
 ---
-## ⚙ Installation
-Clone the repository
+# ⚙ Installation
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-PDF-Chatbot.git
-```
-Move into the project
-```bash
+git clone YOUR_REPOSITORY_URL
 cd AI-PDF-Chatbot
-```
-Create a virtual environment
-```bash
-python -m venv venv
-```
-Activate it
-Mac/Linux
-```bash
-source venv/bin/activate
-```
-Windows
-```bash
-venv\Scripts\activate
-```
-Install dependencies
-```bash
 pip install -r requirements.txt
-```
-Create a `.env` file
-```text
-GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
-```
-Run the application
-```bash
 streamlit run app.py
 ```
 ---
-## 📸 Screenshots
-(Add screenshots here after uploading to GitHub.)
----
-## 👨‍💻 Author
+# 👨‍💻 Author
 **Dinesh Namburi**
