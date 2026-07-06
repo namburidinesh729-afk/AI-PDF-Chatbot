@@ -1,7 +1,29 @@
+# Virtual Environment
 venv/
+
+# Python Cache
 __pycache__/
-.env
-faiss_index/
-pdfs/
 *.pyc
+
+# Environment Variables
+.env
+
+# FAISS Vector Database
+faiss_index/
+
+# Uploaded PDFs
+pdfs/
+
+# macOS
 .DS_Store
+
+# VS Code
+.vscode/
+
+# Python Build Files
+*.egg-info/
+build/
+dist/
+# Generated Export Files
+*.pdf
+*.docx

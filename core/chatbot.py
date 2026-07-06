@@ -10,21 +10,25 @@ llm = ChatGroq(
     groq_api_key=os.getenv("GROQ_API_KEY")
 )
 prompt = ChatPromptTemplate.from_template("""
-You are a helpful AI assistant.
-Answer ONLY using the provided context.
-If the answer is not present in the context, reply:
+You are a helpful AI Study Assistant.
+Use the conversation history when it helps answer follow-up questions.
+Answer ONLY using the provided PDF context.
+If the answer is not present in the context, reply exactly:
 "I couldn't find that information in the uploaded PDF."
+Conversation History:
+{history}
 Context:
 {context}
-Question:
+Current Question:
 {question}
 """)
-def ask_groq(context, question):
+def ask_groq(context, question, history):
     chain = prompt | llm
     response = chain.invoke(
         {
             "context": context,
-            "question": question
+            "question": question,
+            "history": history
         }
     )
     return response.content

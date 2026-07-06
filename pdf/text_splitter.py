@@ -11,7 +11,8 @@ def split_text(documents):
             [doc["text"]],
             metadatas=[
                 {
-                    "page": doc["page"]
+                    "page": doc["page"],
+                    "source": doc["source"]
                 }
             ]
         )

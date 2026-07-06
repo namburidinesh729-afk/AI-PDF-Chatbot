@@ -1,8 +1,6 @@
-
 import os
 from pdf.utils import read_pdf
 from pdf.text_splitter import split_text
-from database.vector_store import create_vector_store
 UPLOAD_FOLDER = "pdfs"
 def process_uploaded_pdf(uploaded_file):
     if not os.path.exists(UPLOAD_FOLDER):
@@ -15,5 +13,4 @@ def process_uploaded_pdf(uploaded_file):
         f.write(uploaded_file.getbuffer())
     documents = read_pdf(file_path)
     chunks = split_text(documents)
-    create_vector_store(chunks)
-    return True
+    return chunks
